@@ -4,7 +4,11 @@ Custom Phosh Squeekboard Keyboard Layout that looks like a US english 104 Keyboa
 How to use
 --------
 
-Copy all thse files to ~/.local/share/squeekboard/keyboards/ 
+Copy all thse files to ~/.local/share/squeekboard/keyboards/
+File structure should look like:
+~/.local/share/squeekboard/keyboards/us.yaml
+~/.local/share/squeekboard/keyboards/number/us.yaml
+~/.local/share/squeekboard/keyboards/terminal/us.yaml
 
 From there it should get picked up by squeekboard automatically.
 
