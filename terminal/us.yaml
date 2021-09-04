@@ -1,1 +1,246 @@
-terminal
+outlines:
+    default: { width: 30, height: 40 }
+    action:  { width: 30, height: 40 }
+    altline: { width: 45, height: 40 }
+    wide:    { width: 45, height: 40 }
+    spaceline: { width: 90, height: 40 }
+    special: { width: 30, height: 40 }
+    small:   { width: 45, height: 40 }
+
+views:
+    base:
+        - "- 1 2 3 4 5 6 7 8 9 0"
+        - "+ q w e r t y u i o p"
+        - "\" a s d f g h j k l"
+        - "Shift_L preferences z x c v b n m BackSpace"
+        - "show_numbers Ctrl Tab ,  space period Return"
+    upper:
+        - "_ ! @ # $ % ^ & * ( )"
+        - "= Q W E R T Y U I O P"
+        - "' A S D F G H J K L"
+        - "Shift_L / Z X C V B N M BackSpace"
+        - "show_actions Menu End colon     space ? Return"
+    symbols:
+        - "Ctrl Alt ↑ ↓ ← →"
+        - "1 2 3 4 5 6 7 8 9 0"
+        - "* # $ / & - _ + ( )"
+        - "show_symbols   , \" ' colon ; ! ?  BackSpace"
+        - "show_letters preferences         space        period Return"
+    numbers:
+        - "PgUp M1 { } \\ / * - ( )"
+        - "PgDn M2 [ ] 7 8 9 + $ |"
+        - "Home M5 < > 4 5 6 = % '"
+        - "End M6 ~ ↑ 1 2 3 , colon ;"
+        - "show_letters M7 ← ↓ → 0 period BackSpace  Return"
+    actions:
+        - "Esc M1  M2  M3  M4  M5  M6"
+        - "Del M7  M8  M9  M10 M11 M12"
+        - "Alt F1  F2  F3  F4  F5  F6"
+        - "show_letters F7  F8  F9  F10 F11 F12"
+
+buttons:
+    Shift_L:
+        action:
+            locking:
+                lock_view: "upper"
+                unlock_view: "base"
+        outline: "altline"
+        icon: "key-shift"
+    BackSpace:
+        outline: "altline"
+        icon: "edit-clear-symbolic"
+        action: erase
+    preferences:
+        action: "show_prefs"
+        outline: "special"
+        icon: "keyboard-mode-symbolic"
+    show_numbers:
+        action:
+            set_view: "numbers"
+        outline: "small"
+        label: "123"
+    show_numbers_from_symbols:
+        action:
+            set_view: "numbers"
+        outline: "small"
+        label: "123"
+    show_letters:
+        action:
+            set_view: "base"
+        outline: "small"
+        label: "ABC"
+    show_symbols:
+        action:
+            set_view: "symbols"
+        outline: "small"
+        label: "SYB"
+    show_actions:
+        action:
+            set_view: "actions"
+        outline: "small"
+        label: "ACT"
+    period:
+        outline: "default"
+        text: "."
+    space:
+        outline: "spaceline"
+        text: " "
+    Return:
+        outline: "wide"
+        icon: "key-enter"
+        keysym: "Return"
+    colon:
+        text: ":"
+    M1:
+        outline: "small"
+        text: "Heading Home"
+        label: "Home"
+    M2:
+        outline: "small"
+        text: "Thank you!"
+        label: "Thank"
+    M3:
+        outline: "small"
+        text: "youremail@hotmail.com"
+        label: "Hotm"
+    M4:
+        outline: "small"
+        text: "youremail@gmail.com"
+        label: "Gmai"
+    M5:
+        outline: "small"
+        text: "username"
+        label: "user"
+    M6:
+        outline: "small"
+        text: "password"
+        label: "pass"
+    M7:
+        outline: "small"
+        text: "City"
+        label: "New York"
+    M8:
+        outline: "small"
+        text: "Addr"
+        label: "You home address"
+    M9:
+        outline: "small"
+        text: "M9"
+        label: "M9"
+    M10:
+        outline: "small"
+        text: "M10"
+        label: "M10"  
+    M11:
+        outline: "small"
+        text: "M11"
+        label: "M11" 
+    M12:
+        outline: "small"
+        text: "M12"
+        label: "M12" 
+    F1:
+        outline: "small"
+        keysym: "F1"
+    F2:
+        outline: "small"
+        keysym: "F2"
+    F3:
+        outline: "small"
+        keysym: "F3"
+    F4:
+        outline: "small"
+        keysym: "F4"
+    F5:
+        outline: "small"
+        keysym: "F5"
+    F6:
+        outline: "small"
+        keysym: "F6"
+    F7:
+        outline: "small"
+        keysym: "F7"
+    F8:
+        outline: "small"
+        keysym: "F8"
+    F9:
+        outline: "small"
+        keysym: "F9"
+    F10:
+        outline: "small"
+        keysym: "F10"
+    F11:
+        outline: "small"
+        keysym: "F11"
+    F12:
+        outline: "small"
+        keysym: "F12"
+    Esc:
+        outline: "small"
+        keysym: "Escape"
+    Tab:
+        outline: "small"
+        keysym: "Tab"
+    Del:
+        outline: "small"
+        keysym: "Delete"
+    Insert:
+        outline: "action"
+        keysym: "Insert"
+    Menu:
+        outline: "small"
+        keysym: "Menu"
+    Pause:
+        outline: "action"
+        keysym: "Pause"
+    Break:
+        outline: "action"
+        keysym: "Break"
+    Home:
+        outline: "small"
+        keysym: "Home"
+    End:
+        outline: "small"
+        keysym: "End"
+    PgUp:
+        outline: "small"
+        keysym: "Page_Up"
+    PgDn:
+        outline: "small"
+        keysym: "Page_Down"
+    "↑":
+        outline: "default"
+        keysym: "Up"
+    "↓":
+        outline: "default"
+        keysym: "Down"
+    "←":
+        outline: "default"
+        keysym: "Left"
+    "→":
+        outline: "default"
+        keysym: "Right"
+    Up:
+        label: "↑"
+        outline: "action"
+        keysym: "Up"
+    Left:
+        label: "←"
+        outline: "action"
+        keysym: "Left"
+    Down:
+        label: "↓"
+        outline: "action"
+        keysym: "Down"
+    Right:
+        label: "→"
+        outline: "action"
+        keysym: "Right"
+    Ctrl:
+        modifier: "Control"
+        outline: "small"
+        label: "Ctrl"
+    Alt:
+        modifier: "Alt"
+        outline: "small"
+        label: "Alt"
