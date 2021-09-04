@@ -5,9 +5,13 @@ How to use
 --------
 
 Copy all thse files to ~/.local/share/squeekboard/keyboards/
+
 File structure should look like:
+
 ~/.local/share/squeekboard/keyboards/us.yaml
+
 ~/.local/share/squeekboard/keyboards/number/us.yaml
+
 ~/.local/share/squeekboard/keyboards/terminal/us.yaml
 
 From there it should get picked up by squeekboard automatically.
