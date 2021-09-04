@@ -94,50 +94,50 @@ buttons:
     M1:
         outline: "small"
         text: "Heading Home"
-        label: "Head"
+        label: "Home"
     M2:
         outline: "small"
-        text: "I got your rent, thank you"
-        label: "I got"
+        text: "Thank you!"
+        label: "Thank"
     M3:
         outline: "small"
-        text: "mikehenson@hotmail.com"
+        text: "youremail@hotmail.com"
         label: "Hotm"
     M4:
         outline: "small"
-        text: "mikehenson5@gmail.com"
+        text: "youremail@gmail.com"
         label: "Gmai"
     M5:
         outline: "small"
-        text: "INNeY4762"
-        label: "INNe"
+        text: "username"
+        label: "user"
     M6:
         outline: "small"
-        text: "am"
-        label: "am"
+        text: "password"
+        label: "pass"
     M7:
         outline: "small"
-        text: "pm"
-        label: "pm"
+        text: "City"
+        label: "New York"
     M8:
         outline: "small"
-        text: "Stillwater"
-        label: "SWO"
+        text: "Addr"
+        label: "You home address"
     M9:
         outline: "small"
-        text: "empty"
+        text: "M9"
         label: "M9"
     M10:
         outline: "small"
-        text: "empty"
+        text: "M10"
         label: "M10"  
     M11:
         outline: "small"
-        text: "empty"
+        text: "M11"
         label: "M11" 
     M12:
         outline: "small"
-        text: "empty"
+        text: "M12"
         label: "M12" 
     F1:
         outline: "small"
