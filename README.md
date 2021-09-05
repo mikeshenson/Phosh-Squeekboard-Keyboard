@@ -1,5 +1,5 @@
 # Phosh-Squeekboard-Keyboard
-Custom Phosh Squeekboard Keyboard Layout that looks like a US english 104 Keyboard layout. This needs to be use added locally because it has quick keys for text. 
+Custom Phosh Squeekboard Keyboard Layout that looks like a US english 104 Keyboard layout. This needs to be use added locally because it has quick preset keys for text. 
 
 How to use
 --------
