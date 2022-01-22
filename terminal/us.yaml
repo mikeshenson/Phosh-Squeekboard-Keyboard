@@ -94,51 +94,51 @@ buttons:
     M1:
         outline: "small"
         text: "Heading Home"
-        label: "Home"
+        label: "Head"
     M2:
         outline: "small"
-        text: "Thank you!"
-        label: "Thank"
+        text: "OK, thank you!"
+        label: "OK"
     M3:
         outline: "small"
-        text: "youremail@hotmail.com"
+        text: "hotmail.com"
         label: "Hotm"
     M4:
         outline: "small"
-        text: "youremail@gmail.com"
+        text: "gmail.com"
         label: "Gmai"
     M5:
         outline: "small"
-        text: "username"
-        label: "user"
+        text: "Username"
+        label: "User"
     M6:
         outline: "small"
-        text: "password"
-        label: "pass"
+        text: "Password"
+        label: "Pass"
     M7:
         outline: "small"
-        text: "City"
-        label: "New York"
+        text: "123-456-7890"
+        label: "ph#"
     M8:
         outline: "small"
-        text: "Addr"
-        label: "You home address"
+        text: "Mem8"
+        label: "Mem8"
     M9:
         outline: "small"
-        text: "M9"
-        label: "M9"
+        text: "Mem9"
+        label: "Mem9"
     M10:
         outline: "small"
-        text: "M10"
-        label: "M10"  
+        text: "Mem10"
+        label: "Mem10"
     M11:
         outline: "small"
-        text: "M11"
-        label: "M11" 
+        text: "https://"
+        label: "http" 
     M12:
         outline: "small"
-        text: "M12"
-        label: "M12" 
+        text: ".com"
+        label: "com" 
     F1:
         outline: "small"
         keysym: "F1"
