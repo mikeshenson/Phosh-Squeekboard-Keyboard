@@ -19,10 +19,9 @@ From there it should get picked up by squeekboard automatically.
 Screenshots
 --------
 
-![ScreenShot](Keyboard_Landscape.png)
-
 ![ScreenShot](Keyboard_Portrait.png)
 
+![ScreenShot](Keyboard_Landscape.png)
 
 References
 --------
