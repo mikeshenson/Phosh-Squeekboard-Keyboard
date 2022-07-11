@@ -1,42 +1,38 @@
 outlines:
-    default: { width: 30, height: 40 }
-    action:  { width: 30, height: 40 }
-    altline: { width: 45, height: 40 }
-    wide:    { width: 45, height: 40 }
-    spaceline: { width: 90, height: 40 }
-    special: { width: 30, height: 40 }
-    small:   { width: 45, height: 40 }
+    default: { width: 28, height: 30 }
+    action:  { width: 28, height: 30 }
+    altline: { width: 42, height: 30 }
+    wide:    { width: 42, height: 30 }
+    spaceline: { width: 112, height: 30 }
+    special: { width: 28, height: 30 }
+    small:   { width: 42, height: 30 }
+    blank:   { width: 14, height: 30 }
 
 views:
     base:
-        - "- 1 2 3 4 5 6 7 8 9 0"
-        - "+ q w e r t y u i o p"
-        - "\" a s d f g h j k l"
-        - "Shift_L preferences z x c v b n m BackSpace"
-        - "show_numbers Ctrl Tab ,  space period Return"
+        - "Tab - 1 2 3 4 5 6 7 8 9 0"
+        - "Del + q w e r t y u i o p"
+        - "Menu blank \" a s d f g h j k l blank"
+        - "Shift_L blank preferences z x c v b n m / BackSpace"
+        - "show_numbers Ctrl Alt , space period  blank Return"
     upper:
-        - "_ ! @ # $ % ^ & * ( )"
-        - "= Q W E R T Y U I O P"
-        - "' A S D F G H J K L"
-        - "Shift_L / Z X C V B N M BackSpace"
-        - "show_actions Menu End colon     space ? Return"
-    symbols:
-        - "Ctrl Alt ↑ ↓ ← →"
-        - "1 2 3 4 5 6 7 8 9 0"
-        - "* # $ / & - _ + ( )"
-        - "show_symbols   , \" ' colon ; ! ?  BackSpace"
-        - "show_letters preferences         space        period Return"
+        - "M1 _ ! @ # $ % ^ & * ( )"
+        - "M3 = Q W E R T Y U I O P"
+        - "M4 blank ' A S D F G H J K L blank"
+        - "Shift_L blank preferences Z X C V B N M \\ BackSpace"
+        - "show_actions M2 M5 colon space ? blank Return"
     numbers:
-        - "PgUp M1 { } \\ / * - ( )"
-        - "PgDn M2 [ ] 7 8 9 + $ |"
-        - "Home M5 < > 4 5 6 = % '"
-        - "End M6 ~ ↑ 1 2 3 , colon ;"
-        - "show_letters M7 ← ↓ → 0 period BackSpace  Return"
+        - "Esc M1 # { } \\ / * - ( ) blank"
+        - "Del M3 ! [ ] 7 8 9 + $ | blank"
+        - "Home M4 ^ < > 4 5 6 = % ' blank"
+        - "End M2 _ ; ~ 1 2 3 ↑ , BackSpace"
+        - "show_letters M5 blank colon period space_small 0 ← ↓ → Return"
     actions:
-        - "Esc M1  M2  M3  M4  M5  M6"
-        - "Del M7  M8  M9  M10 M11 M12"
-        - "Alt F1  F2  F3  F4  F5  F6"
-        - "show_letters F7  F8  F9  F10 F11 F12"
+        - "Tab PgUp blank F1  F2  F3  F4  F5  F6"
+        - "Del PgDn blank F7 F8 F9  F10 F11 F12"
+        - "Menu Home blank M1  M2  M3  M4  M5  M6"
+        - "show_numbers End blank M7  M8  M9  M10 M11 BackSpace"
+        - "show_letters Ctrl Alt , space M12 Return"
 
 buttons:
     Shift_L:
@@ -85,8 +81,14 @@ buttons:
     space:
         outline: "spaceline"
         text: " "
+    space_small:
+        outline: "small"
+        text: " "
+    blank:
+        outline: "blank"
+        text: ""
     Return:
-        outline: "wide"
+        outline: "small"
         icon: "key-enter"
         keysym: "Return"
     colon:
@@ -97,48 +99,48 @@ buttons:
         label: "Head"
     M2:
         outline: "small"
-        text: "OK, thank you!"
-        label: "OK"
+        text: "I got your text, thank you"
+        label: "I got"
     M3:
         outline: "small"
-        text: "hotmail.com"
+        text: "name@hotmail.com"
         label: "Hotm"
     M4:
         outline: "small"
-        text: "gmail.com"
+        text: "name@gmail.com"
         label: "Gmai"
     M5:
         outline: "small"
-        text: "Username"
-        label: "User"
+        text: "M5"
+        label: "M5"
     M6:
         outline: "small"
-        text: "Password"
-        label: "Pass"
+        text: "am"
+        label: "am"
     M7:
         outline: "small"
-        text: "123-456-7890"
-        label: "ph#"
+        text: "pm"
+        label: "pm"
     M8:
         outline: "small"
-        text: "Mem8"
-        label: "Mem8"
+        text: "M8"
+        label: "M8"
     M9:
         outline: "small"
-        text: "Mem9"
-        label: "Mem9"
+        text: "M9"
+        label: "M9"
     M10:
         outline: "small"
-        text: "Mem10"
-        label: "Mem10"
+        text: "M10"
+        label: "M10"
     M11:
         outline: "small"
-        text: "https://"
-        label: "http" 
+        text: "M11"
+        label: "M11"
     M12:
         outline: "small"
-        text: ".com"
-        label: "com" 
+        text: "M12"
+        label: "M12"
     F1:
         outline: "small"
         keysym: "F1"
