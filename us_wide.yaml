@@ -19,7 +19,7 @@ views:
         - "show_actions Ctrl Alt space M1 M2 blank2 $ = 0 ← ↓ → space ; \" Return"
     upper:
         - "Tab blank Q W E R T blank [ ] Home ↑ PgUp _ Y U I O P Esc"
-        - "Menu blank2 A S D F G < > ← blank3 → # blank H J K L blank2 Del"
+        - "Menu blank2 A S D F G < > ← | → # blank H J K L blank2 Del"
         - "Shift_L preferences Z X C V B blank2 @ End ↓ PgDn ↑ B N M ! ? BackSpace"
         - "show_actions Ctrl Alt space M3 M4 blank2 http com M8 ← ↓ → space colon ' Return"
     actions:
