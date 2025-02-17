@@ -1,33 +1,32 @@
 ---
 outlines:
-    default: { width: 45, height: 40 }
-    action:  { width: 45, height: 40 }
-    altline: { width: 45, height: 40 }
-    wide:    { width: 45, height: 40 }
-    spaceline: { width: 90, height: 40 }
-    blank:   { width: 15, height: 40 }
-    blank2:  { width: 30, height: 40 }
-    blank3:  { width: 45, height: 40 }
-    special: { width: 45, height: 40 }
-    small:   { width: 45, height: 40 }
+    default: { width: 48, height: 42 }
+    action:  { width: 48, height: 42 }
+    altline: { width: 48, height: 42 }
+    wide:    { width: 48, height: 42 }
+    spaceline: { width: 96, height: 42 }
+    def_13:   { width: 16, height: 42 }
+    def_23:  { width: 32, height: 42 }
+    special: { width: 48, height: 42 }
+    small:   { width: 48, height: 42 }
 
 views:
     base:
-        - "Tab blank q w e r t blank ( ) 7 8 9 - y u i o p Esc"
-        - "Menu blank2 a s d f g \\ / 4 5 6 + blank h j k l blank2 Del "
-        - "Shift_L preferences z x c v b blank2 * 1 2 3 ↑ b n m , period BackSpace"
-        - "show_actions Ctrl Alt space M1 M2 blank2 $ = 0 ← ↓ → space ; \" Return"
+        - "Tab blank q w e r t s_| @ 7 8 9 - y u i o p Esc"
+        - "Menu s_/ a s d f g blank # 4 5 6 + blank h j k l s_b Del "
+        - "Shift_L preferences z x c v b * 1 2 3 ↑ b n m , period BackSpace"
+        - "show_actions Ctrl Alt space s_( s_) s_< $ = 0 ← ↓ → space colon \" Return" 
     upper:
-        - "Tab blank Q W E R T blank [ ] Home ↑ PgUp _ Y U I O P Esc"
-        - "Menu blank2 A S D F G < > ← | → # blank H J K L blank2 Del"
-        - "Shift_L preferences Z X C V B blank2 @ End ↓ PgDn ↑ B N M ! ? BackSpace"
-        - "show_actions Ctrl Alt space M3 M4 blank2 http com M8 ← ↓ → space colon ' Return"
+        - "Tab blank Q W E R T blank2 blank3 Home ↑ PgUp _ Y U I O P Esc"
+        - "Menu s_{ A S D F G blank & ← blank3 → # blank H J K L s_} Del"
+        - "Shift_L preferences Z X C V B blank3 End ↓ PgDn ↑ B N M ! ? BackSpace"
+        - "show_actions Ctrl Alt space s_[ s_] s_> blank3 http com ← ↓ → space ; ' Return"
     actions:
-        - "Tab F1  F2  F3  F4  F5  F6  F7  F8  F9  F10  F11  F12 blank3 blank3 blank3 blank3 blank2 Esc"
-        - "Menu ~ ! @ # $ % ^ & * < > blank3 blank3 blank3 blank3 blank3 blank2 Del"
-        - "blank3 M1  M2  M3  M4  blank2 M5  M6  M7  M8  M9  M10 ↑ http com blank3 blank3 blank3 BackSpace"
-        - "show_letters Ctrl Alt space blank2 Up Left Down Right blank3 ← ↓ → space blank3 blank3 Return"
-
+        - "Tab F1  F2  F3  F4  F5  F6  F7  F8  F9  F10  F11  F12 M1 M2 M3 M4 Esc"
+        - "Menu ! @ # $ % ^ & * ( ) ~ blank3 M5 M6 M7 M8 Del"
+        - "blank3 1 2 3 4 5 6 7 8 9 0 ↑ blank3 M9 M10 M11 M12 BackSpace"
+        - "show_letters Ctrl Alt space blank3 Up Left Down Right ← ↓ → space http com Return"
+        
 buttons:
     Shift_L:
         action:
@@ -76,18 +75,51 @@ buttons:
         outline: "spaceline"
         text: " "
     blank:
-        outline: "blank"
+        outline: "def_13"
         text: ""
     blank2:
-        outline: "blank2"
+        outline: "def_23"
         text: ""
     blank3:
-        outline: "blank3"
+        outline: "default"
         text: ""
     Return:
         outline: "wide"
         icon: "key-enter"
         keysym: "Return"
+    s_|:
+        outline: "def_23"
+        text: "|"
+    s_(:
+        outline: "def_23"
+        text: "("
+    s_):
+        outline: "def_23"
+        text: ")"
+    s_/:
+        outline: "def_23"
+        text: "/"
+    s_b:
+        outline: "def_23"
+        text: "\\"
+    s_{:
+        outline: "def_23"
+        text: "{"
+    s_}:
+        outline: "def_23"
+        text: "}"
+    s_[:
+        outline: "def_23"
+        text: "["
+    s_]:
+        outline: "def_23"
+        text: "]"
+    s_<:
+        outline: "def_23"
+        text: "<"
+    s_>:
+        outline: "def_23"
+        text: ">"
     colon:
         text: ":"
     M1:
@@ -96,28 +128,28 @@ buttons:
         label: "Head"
     M2:
         outline: "small"
-        text: "I got your text, thank you"
-        label: "I got"
+        text: "M2"
+        label: "M2"
     M3:
         outline: "small"
-        text: "name@hotmail.com"
-        label: "Hotm"
+        text: "OK, Thank You!"
+        label: "OK,"
     M4:
         outline: "small"
-        text: "name@gmail.com"
-        label: "Gmai"
+        text: "M4"
+        label: "M4"
     M5:
         outline: "small"
         text: "M5"
         label: "M5"
     M6:
         outline: "small"
-        text: "am"
-        label: "am"
+        text: "M6"
+        label: "M6"
     M7:
         outline: "small"
-        text: "pm"
-        label: "pm"
+        text: "M7"
+        label: "M7"
     M8:
         outline: "small"
         text: "M8"
@@ -130,10 +162,18 @@ buttons:
         outline: "small"
         text: "M10"
         label: "M10"
+    M11:
+        outline: "small"
+        text: "M11"
+        label: "M11"
+    M12:
+        outline: "small"
+        text: "M12"
+        label: "M12"
     http:
         outline: "small"
         text: "https://"
-        label: "http"
+        label: "http" 
     com:
         outline: "small"
         text: ".com"
