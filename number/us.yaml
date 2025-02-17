@@ -1,44 +1,40 @@
 outlines:
-    default: { width: 28, height: 30 }
-    action:  { width: 28, height: 30 }
-    altline: { width: 42, height: 30 }
-    wide:    { width: 42, height: 30 }
-    spaceline: { width: 112, height: 30 }
-    special: { width: 28, height: 30 }
-    small:   { width: 42, height: 30 }
-    blank:   { width: 14, height: 30 }
+    default: { width: 30, height: 38 }
+    action:  { width: 30, height: 38 }
+    altline: { width: 45, height: 38 }
+    wide:    { width: 45, height: 38 }
+    spaceline: { width: 90, height: 38 }
+    special: { width: 30, height: 38 }
+    small:   { width: 45, height: 38 }
+    blank:   { width: 15, height: 38 }
 
 views:
     base:
-        - "Tab - 1 2 3 4 5 6 7 8 9 0"
-        - "Del + q w e r t y u i o p"
-        - "Menu blank \" a s d f g h j k l blank"
-        - "Shift_L blank preferences z x c v b n m / BackSpace"
-        - "show_numbers Ctrl Alt , space period  blank Return"
+        - "Tab q w e r t y u i o p"
+        - "Menu blank a s d f g h j k l blank"
+        - "Shift_L \" z x c v b n m blank BackSpace"
+        - "show_numbers Ctrl - , space period preferences Return"
     upper:
-        - "M1 _ ! @ # $ % ^ & * ( )"
-        - "M3 = Q W E R T Y U I O P"
-        - "M4 blank ' A S D F G H J K L blank"
-        - "Shift_L blank preferences Z X C V B N M \\ BackSpace"
-        - "show_actions M2 M5 colon space ? blank Return"
+        - "M1 Q W E R T Y U I O P"
+        - "M3 blank A S D F G H J K L blank"
+        - "Shift_L ' Z X C V B N M blank BackSpace"
+        - "show_actions blank colon + ; space ? ! Return"
     numbers:
-        - "Esc M1 # { } \\ / * - ( ) blank"
-        - "Del M3 ! [ ] 7 8 9 + $ | blank"
-        - "Home M4 ^ < > 4 5 6 = % ' blank"
-        - "End M2 _ ; ~ 1 2 3 ↑ , BackSpace"
-        - "show_letters M5 blank colon period space_small 0 ← ↓ → Return"
+        - "Esc blank ~ | * $ 7 8 9 - Del"
+        - "Home blank ^ \\ / % 4 5 6 + space_small"
+        - "End blank < > ↑ blank 1 2 3 = BackSpace"
+        - "show_letters colon ← ↓ → 0 period , Return"
     actions:
-        - "Tab PgUp blank F1  F2  F3  F4  F5  F6"
-        - "Del PgDn blank F7 F8 F9  F10 F11 F12"
-        - "Menu Home blank M1  M2  M3  M4  M5  M6"
-        - "show_numbers End blank M7  M8  M9  M10 M11 BackSpace"
-        - "show_letters Ctrl Alt , space M12 Return"
+        - "Del ( F1  F2  F3  F4  F5  F6"
+        - "Menu ) F7 F8 F9  F10 F11 F12"
+        - "show_numbers [ M1 M5 M6 M7 M8 BackSpace"
+        - "show_letters ] M3 M9 M10 M11 M12 Return"
 
 buttons:
     Shift_L:
         action:
             locking:
-                lock_view: "upper"
+                lock_view: "upper" 
                 unlock_view: "base"
         outline: "altline"
         icon: "key-shift"
@@ -99,28 +95,28 @@ buttons:
         label: "Head"
     M2:
         outline: "small"
-        text: "I got your text, thank you"
-        label: "I got"
+        text: "M2"
+        label: "M2"
     M3:
         outline: "small"
-        text: "name@hotmail.com"
-        label: "Hotm"
+        text: "OK, Thank You!"
+        label: "OK,"
     M4:
         outline: "small"
-        text: "name@gmail.com"
-        label: "Gmai"
+        text: "M4"
+        label: "M4"
     M5:
         outline: "small"
         text: "M5"
         label: "M5"
     M6:
         outline: "small"
-        text: "am"
-        label: "am"
+        text: "M6"
+        label: "M6"
     M7:
         outline: "small"
-        text: "pm"
-        label: "pm"
+        text: "M7"
+        label: "M7"
     M8:
         outline: "small"
         text: "M8"
@@ -211,16 +207,16 @@ buttons:
         outline: "small"
         keysym: "Page_Down"
     "↑":
-        outline: "default"
+        outline: "altline"
         keysym: "Up"
     "↓":
-        outline: "default"
+        outline: "altline"
         keysym: "Down"
     "←":
-        outline: "default"
+        outline: "altline"
         keysym: "Left"
     "→":
-        outline: "default"
+        outline: "altline"
         keysym: "Right"
     Up:
         label: "↑"
