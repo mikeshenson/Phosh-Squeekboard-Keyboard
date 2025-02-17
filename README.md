@@ -1,26 +1,20 @@
 # Phosh-Squeekboard-Keyboard
-Custom Phosh Squeekboard Keyboard Layout that looks like a US english 104 Keyboard layout. This needs to be use added locally because it has quick preset keys for text. 
+Custom Phosh Squeekboard Keyboard Layout that looks like a US English 104 Keyboard layout. This needs to be use added locally because it has quick preset keys for text. 
 
-How to use
---------
+## How to use
+Make the ~/.local/share/squeekboard/keyboards/ directory <br>
+Copy all these files to ~/.local/share/squeekboard/keyboards/  <br>
+File structure should look like: <br>
+~/.local/share/squeekboard/keyboards/us.yaml <br>
+~/.local/share/squeekboard/keyboards/number/us.yaml <br>
+~/.local/share/squeekboard/keyboards/terminal/us.yaml <br>
+From there it should get picked up by squeekboard automatically. <br>
 
-Copy all thse files to ~/.local/share/squeekboard/keyboards/
+Manual inputs <br>
+Open the yaml files up and look for "M4" replace the text and label with your own strings.
 
-File structure should look like:
-
-~/.local/share/squeekboard/keyboards/us.yaml
-
-~/.local/share/squeekboard/keyboards/number/us.yaml
-
-~/.local/share/squeekboard/keyboards/terminal/us.yaml
-
-From there it should get picked up by squeekboard automatically.
-
-Screenshots
---------
-
-![ScreenShot](Keyboard_Portrait.png)
-
+## Screenshots
+![ScreenShot](Keyboard_Portrait.png) <br>
 ![ScreenShot](Keyboard_Landscape.png)
 
 References
